@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>  //to read in files
 #include <string>  //to read in strings
+#include <iomanip> //in out manipulation
 
 using namespace std;
 
@@ -17,10 +18,17 @@ int main()
 	int counter = 0;
 	ifstream inputFile;
 
+	string stars; //output formating
+
+	// Set the star output formatting
+		stars.assign(75, '*');
+
 	//Explain fuction of program to user
-	cout << "This program will input student names from the file lineup.txt" << endl;
-	cout << "The student names will be sorted Alphabeticaly" << endl;
-	cout << "The name of the first student and the last student will then be displayed" << endl;
+	cout << endl << stars << endl;
+	cout << "\nThis program will input student names from the file lineup.txt." << endl;
+	cout << "The student names will be sorted alphabeticaly." << endl;
+	cout << "The name of the first student and the last student will then be displayed." << endl << endl;
+	cout << stars << endl << endl;
 
 	inputFile.open("lineup.txt");
 
@@ -49,8 +57,8 @@ int main()
 		}
 	}
 
-	cout << "The name of the first student is " << firstStudent << endl;
-	cout << "The name of the last studnet is " << lastStudent << endl;
+	cout << "\nThe name of the first student is " << firstStudent << "." << endl;
+	cout << "\nThe name of the last studnet is " << lastStudent << ".\n" << endl;
 
 	inputFile.close();
 
