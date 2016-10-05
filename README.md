@@ -13,8 +13,8 @@ Use LineUp.txt as a test file for your program.
 Once all the names have been read in display which student will be at the front of the line and which one would be at the end of the line.  You may assume that no two students have the same name.
 
 ## My step process
-+C++ Use a supplied input file
-+Store intial data to begin comparison
-+Compare each value in file to current saved variable
-+If conditions are met update value of variable
-+Display final values of the stored variables firstStudent and lastStudent
+..+C++ Use a supplied input file
+..+Store intial data to begin comparison
+..+Compare each value in file to current saved variable
+..+If conditions are met update value of variable
+..+Display final values of the stored variables firstStudent and lastStudent
